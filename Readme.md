@@ -59,6 +59,7 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 #### modelspc.dff
 > Contains all 3d models for props and characters in that particular level.
 > Should probably not go over 10mb.
+- 👁️ Can be previewed using [MHS](https://www.dixmor-hospital.com/mhs/index.php)
 - ✏️ Can be edited with any DFF 3D Studio Max script, using the GTA SA option (might need to skip COL). For example, [GF's script based on Kam's](https://gtaforums.com/topic/907323-rel-kams-gta-scripts-2018-upd-31052020/)
 - 📦 Can be packed/unpacked with [MHT](https://github.com/Sor3nt/manhunt-toolkit/releases)
 - 📦 Can be packed/unpacked visually with [MMCD](https://www.dixmor-hospital.com/mods/view/manhunt-models-compile-decompile)
@@ -68,6 +69,7 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 > Textures are always better as powers of 4 (64,128,256,512,1024... etc)
 > Textures should be compressed as DXT1. If they have an alpha DXT3 should be used instead.
 > Should probably not go over 10mb.
+- 👁️ Can be previewed using [MHS](https://www.dixmor-hospital.com/mhs/index.php)
 - ✏️ Can be edited with [MagicTXD tool](https://www.gtagarage.com/mods/show.php?id=27862)
 
 #### scene1pc.txd
@@ -75,6 +77,7 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 > Textures are always better as powers of 4 (64,128,256,512,1024... etc)
 > Textures should be compressed as DXT1. If they have an alpha DXT3 should be used instead.
 > Should probably not go over 10mb.
+- 👁️ Can be previewed using [MHS](https://www.dixmor-hospital.com/mhs/index.php)
 - ✏️ Can be edited with [MagicTXD tool](https://www.gtagarage.com/mods/show.php?id=27862)
 
 ### /pc_text folder
@@ -143,10 +146,21 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 - 📦 Can be packed/unpacked in json format with [MHT](https://github.com/Sor3nt/manhunt-toolkit/releases)
 - ✏️ Can be edited with any text editor (notepad, vscode, vim...) (once unpacked)
 
+#### picload_pc.txd
+> Contains the texture that's seen when this level loads
+- 👁️ Can be previewed using [MHS](https://www.dixmor-hospital.com/mhs/index.php)
+- ✏️ Can be edited with [MagicTXD tool](https://www.gtagarage.com/mods/show.php?id=27862)
+
+#### picmap.txd / picmmap.txd
+> Unused maps.
+- 👁️ Can be previewed using [MHS](https://www.dixmor-hospital.com/mhs/index.php)
+- ✏️ Can be edited with [MagicTXD tool](https://www.gtagarage.com/mods/show.php?id=27862)
+
 #### scene1.bsp
 > Contains geometry data for the level. Every mesh in this file has automatic collision. 
 > Soon more info about PVS, max materials, vertex colors, etc.
 - ✏️ Can be edited with using RW SDK 3.5.
+- 👁️ Can be previewed using [MHS](https://www.dixmor-hospital.com/mhs/index.php)
 - 📹 [Tutorial](https://www.youtube.com/watch?v=eBYBZ3RC2uA)
 
 #### scene2.bsp
