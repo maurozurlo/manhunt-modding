@@ -48,9 +48,10 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 >- levelSetup.ini
 >- spl/splines.ini
 
-- 📦 Can be packed/unpacked in json format with [MHT](https://github.com/Sor3nt/manhunt-toolkit/releases)
-- ✅ Can be patched (along other issues) with [MH Fixer](https://github.com/ermaccer/Manhunt.Fixer/releases)
-- ✅ Can be patched with [Manhunt PAKPatch](https://github.com/ermaccer/Manhunt.PAKPatch/releases)
+- 📦 Can be packed/unpacked with [MHT](https://github.com/Sor3nt/manhunt-toolkit/releases)
+- 📦 Can be extracted with [PakExtract](https://github.com/ermaccer/pakextract/releases)
+- ✅ Can be patched (along other issues) with [pluginMH](https://github.com/ermaccer/Manhunt.PluginMH/releases)
+- ✅ Can be patched to load raw files first with [Manhunt PAKPatch](https://github.com/ermaccer/Manhunt.PAKPatch/releases)
 
 ##  All Level Files
 
@@ -172,4 +173,4 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 > The worst file of them all. 
 > Unmodded game will gladly crash if any file goes over what's written in this size list of crap. 
 - ✏️ Can be edited with any text editor and tears
-- 😈 Can be disabled and sent back to hell with [MH Fixer](https://github.com/ermaccer/Manhunt.Fixer/releases)
+- 😈 Can be disabled and sent back to hell with [pluginMH](https://github.com/ermaccer/Manhunt.PluginMH/releases)
