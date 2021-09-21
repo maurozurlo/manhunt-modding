@@ -97,8 +97,8 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 
 #### {{level name}}.mls
 > Contains code for everything that happens in the level.
+- 📦 Can be unpacked/compiled with [MHT](https://github.com/Sor3nt/manhunt-toolkit/releases)
 - ✏️ Can be edited (once unpacked) in srce format with any text editor (notepad, vscode, vim...)
-- 📦 Can be packed/unpacked with [MHT](https://github.com/Sor3nt/manhunt-toolkit/releases)
 
 ### /spl folder
 
@@ -115,7 +115,7 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 
 #### allanims.ifp
 > Contains all anims for that particular level in blocks.
-- ✏️ Can be edited with [Allen's 3D Studio Max script](https://gtaforums.com/topic/745033-3dsmaxrel-manhunt-2-mdl-ifp-importerexporter)
+- ✏️ Can be opened/edited with [Allen's 3D Studio Max script](https://gtaforums.com/topic/745033-3dsmaxrel-manhunt-2-mdl-ifp-importerexporter)
 - 📦 Can be packed/unpacked in json format with [MHT](https://github.com/Sor3nt/manhunt-toolkit/releases)
 
 #### {{level name}}.bik / outro.bik
@@ -124,7 +124,7 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 
 #### collisions.col
 > Contains collisions for entities in the level such as the player, hunters, props in the map, etc.
-- ✏️ Can be edited with [Allen's 3D Studio Max script](https://gtaforums.com/topic/745033-3dsmaxrel-manhunt-2-mdl-ifp-importerexporter)
+- ✏️ Can be opened/edited with [Allen's 3D Studio Max script](https://gtaforums.com/topic/745033-3dsmaxrel-manhunt-2-mdl-ifp-importerexporter)
 - 📦 Can be packed/unpacked in json format with [MHT](https://github.com/Sor3nt/manhunt-toolkit/releases)
 
 #### entity.inst / entity2.inst
@@ -159,9 +159,13 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 
 #### scene1.bsp
 > Contains geometry data for the level. Every mesh in this file has automatic collision. 
-> Soon more info about PVS, max materials, vertex colors, etc.
-- ✏️ Can be edited with using RW SDK 3.5.
+> To avoid players/hunters without ambient light (black) you need to generate PVS
+> The default max amount of materials is about 300
+> Shadows in the level are controlled by (dark) vertex colors
+- ✏️ Can be created using RW SDK 3.5.
+- ✏️ PVS can be generated using wrldview from RW SDK 3.5.
 - 👁️ Can be previewed using [MHS](https://www.dixmor-hospital.com/mhs/index.php)
+- 😈 Max material limit can be disabled with [pluginMH](https://github.com/ermaccer/Manhunt.PluginMH/releases)
 - 📹 [Tutorial](https://www.youtube.com/watch?v=eBYBZ3RC2uA)
 
 #### scene2.bsp
