@@ -114,7 +114,7 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 
 #### allanims.ifp
 > Contains all anims for that particular level in blocks.
-- ✏️ Can be edited with Allen's 3D Studio Max script
+- ✏️ Can be edited with [Allen's 3D Studio Max script](https://gtaforums.com/topic/745033-3dsmaxrel-manhunt-2-mdl-ifp-importerexporter)
 - 📦 Can be packed/unpacked in json format with [MHT](https://github.com/Sor3nt/manhunt-toolkit/releases)
 
 #### {{level name}}.bik / outro.bik
@@ -123,7 +123,7 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 
 #### collisions.col
 > Contains collisions for entities in the level such as the player, hunters, props in the map, etc.
-- ✏️ Can be edited with Allen's 3D Studio Max script
+- ✏️ Can be edited with [Allen's 3D Studio Max script](https://gtaforums.com/topic/745033-3dsmaxrel-manhunt-2-mdl-ifp-importerexporter)
 - 📦 Can be packed/unpacked in json format with [MHT](https://github.com/Sor3nt/manhunt-toolkit/releases)
 
 #### entity.inst / entity2.inst
