@@ -29,15 +29,27 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 ### /tvp
 > Needs to be unpacked from ManHunt.pak file
 > Timed Vector Pairs. Camera angles for executions.
-> More info soon.
+
+> Structure
+- Type (VECPAIR => Regular Vector | VECPAIR@ => Last Vector)
+- Duration (How long should the camera stay)
+- Camera position X (need negation)
+- Camera position Y
+- Camera position Z
+- Camera look at position X (need negation)
+- Camera look at position Y
+- Camera look at position Z
+- Camera Pan (not 100% sure)
+- Camera Roll
 
 ### game.scc
-> Needs to be unpacked from ManHunt.pak file
-> I've no idea. Seems to be an mls file.
+> Needs to be unpacked from ManHunt.pak and unpacked 
+> with MHT. Contains MLS Code variables which are 
+> shared over all levels
 
 ### weather.ini
 > Needs to be unpacked from ManHunt.pak file
-> I've no idea. Seems to be an mls file.
+> Contains Weather stuff.
 
 ## ManHunt.pak File
 > Found in /levels/GLOBAL/data*
