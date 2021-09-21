@@ -13,7 +13,9 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 > More info soon
 
 ### /mpeg Folder
-> Videos in bik format for titles / ending of the game.
+> Videos in bink video format for titles / ending of the game.
+- 👁️ Can be viewed with [The RAD Video Tools](http://www.radgametools.com/bnkdown.htm)
+- ✏️ Can be decoded/encoded with [ffmpeg](https://www.ffmpeg.org/)
 
 ### /pak Folder
 > Models and textures that are common to all levels. Such as rats, crows, etc.
@@ -132,7 +134,9 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 
 #### {{level name}}.bik / outro.bik
 > Found in /levels/{{level name}}
-> Prerendered cutscene. Can probably be edited with a bik video tool.
+> Prerendered cutscenes.
+- 👁️ Can be viewed with [The RAD Video Tools](http://www.radgametools.com/bnkdown.htm)
+- ✏️ Can be decoded/encoded with [ffmpeg](https://www.ffmpeg.org/)
 
 #### collisions.col
 > Contains collisions for entities in the level such as the player, hunters, props in the map, etc.
@@ -170,7 +174,8 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 - ✏️ Can be edited with [MagicTXD tool](https://www.gtagarage.com/mods/show.php?id=27862)
 
 #### scene1.bsp
-> Contains geometry data for the level. Every mesh in this file has automatic collision. 
+> Contains geometry data for the level. Every mesh in this file has automatic collision.
+> PVS (possible visible set) is RW's culling system for maps that divides the mesh into sectors
 > To avoid players/hunters without ambient light (black) you need to generate PVS
 > The default max amount of materials is about 300
 > Shadows in the level are controlled by (dark) vertex colors
