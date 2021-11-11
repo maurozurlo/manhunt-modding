@@ -13,7 +13,9 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 > More info soon
 
 ### /mpeg Folder
-> Videos in bik format for titles / ending of the game.
+> Videos in bink video format for titles / ending of the game.
+- 👁️ Can be viewed with [The RAD Video Tools](http://www.radgametools.com/bnkdown.htm)
+- ✏️ Can be decoded/encoded with [ffmpeg](https://www.ffmpeg.org/)
 
 ### /pak Folder
 > Models and textures that are common to all levels. Such as rats, crows, etc.
@@ -29,15 +31,27 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 ### /tvp
 > Needs to be unpacked from ManHunt.pak file
 > Timed Vector Pairs. Camera angles for executions.
-> More info soon.
+
+> Structure
+- Type (VECPAIR => Regular Vector | VECPAIR@ => Last Vector)
+- Duration (How long should the camera stay)
+- Camera position X (need negation)
+- Camera position Y
+- Camera position Z
+- Camera look at position X (need negation)
+- Camera look at position Y
+- Camera look at position Z
+- Camera Pan (not 100% sure)
+- Camera Roll
 
 ### game.scc
-> Needs to be unpacked from ManHunt.pak file
-> I've no idea. Seems to be an mls file.
+> Needs to be unpacked from ManHunt.pak and unpacked 
+> with MHT. Contains MLS Code variables which are 
+> shared over all levels
 
 ### weather.ini
 > Needs to be unpacked from ManHunt.pak file
-> I've no idea. Seems to be an mls file.
+> Contains Weather stuff.
 
 ## ManHunt.pak File
 > Found in /levels/GLOBAL/data*
@@ -48,9 +62,10 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 >- levelSetup.ini
 >- spl/splines.ini
 
-- 📦 Can be packed/unpacked in json format with [MHT](https://github.com/Sor3nt/manhunt-toolkit/releases)
-- ✅ Can be patched (along other issues) with [MH Fixer](https://github.com/ermaccer/Manhunt.Fixer/releases)
-- ✅ Can be patched with [Manhunt PAKPatch](https://github.com/ermaccer/Manhunt.PAKPatch/releases)
+- 📦 Can be packed/unpacked with [MHT](https://github.com/Sor3nt/manhunt-toolkit/releases)
+- 📦 Can be extracted with [PakExtract](https://github.com/ermaccer/pakextract/releases)
+- ✅ Can be patched (along other issues) with [pluginMH](https://github.com/ermaccer/Manhunt.PluginMH/releases)
+- ✅ Can be patched to load raw files first with [Manhunt PAKPatch](https://github.com/ermaccer/Manhunt.PAKPatch/releases)
 
 ##  All Level Files
 
@@ -96,8 +111,8 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 
 #### {{level name}}.mls
 > Contains code for everything that happens in the level.
+- 📦 Can be unpacked/compiled with [MHT](https://github.com/Sor3nt/manhunt-toolkit/releases)
 - ✏️ Can be edited (once unpacked) in srce format with any text editor (notepad, vscode, vim...)
-- 📦 Can be packed/unpacked with [MHT](https://github.com/Sor3nt/manhunt-toolkit/releases)
 
 ### /spl folder
 
@@ -114,16 +129,18 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 
 #### allanims.ifp
 > Contains all anims for that particular level in blocks.
-- ✏️ Can be edited with Allen's 3D Studio Max script
+- ✏️ Can be opened/edited with [Allen's 3D Studio Max script](https://gtaforums.com/topic/745033-3dsmaxrel-manhunt-2-mdl-ifp-importerexporter)
 - 📦 Can be packed/unpacked in json format with [MHT](https://github.com/Sor3nt/manhunt-toolkit/releases)
 
 #### {{level name}}.bik / outro.bik
 > Found in /levels/{{level name}}
-> Prerendered cutscene. Can probably be edited with a bik video tool.
+> Prerendered cutscenes.
+- 👁️ Can be viewed with [The RAD Video Tools](http://www.radgametools.com/bnkdown.htm)
+- ✏️ Can be decoded/encoded with [ffmpeg](https://www.ffmpeg.org/)
 
 #### collisions.col
 > Contains collisions for entities in the level such as the player, hunters, props in the map, etc.
-- ✏️ Can be edited with Allen's 3D Studio Max script
+- ✏️ Can be opened/edited with [Allen's 3D Studio Max script](https://gtaforums.com/topic/745033-3dsmaxrel-manhunt-2-mdl-ifp-importerexporter)
 - 📦 Can be packed/unpacked in json format with [MHT](https://github.com/Sor3nt/manhunt-toolkit/releases)
 
 #### entity.inst / entity2.inst
@@ -157,10 +174,15 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 - ✏️ Can be edited with [MagicTXD tool](https://www.gtagarage.com/mods/show.php?id=27862)
 
 #### scene1.bsp
-> Contains geometry data for the level. Every mesh in this file has automatic collision. 
-> Soon more info about PVS, max materials, vertex colors, etc.
-- ✏️ Can be edited with using RW SDK 3.5.
+> Contains geometry data for the level. Every mesh in this file has automatic collision.
+> PVS (possible visible set) is RW's culling system for maps that divides the mesh into sectors
+> To avoid players/hunters without ambient light (black) you need to generate PVS
+> The default max amount of materials is about 300
+> Shadows in the level are controlled by (dark) vertex colors
+- ✏️ Can be created using RW SDK 3.5.
+- ✏️ PVS can be generated using wrldview from RW SDK 3.5.
 - 👁️ Can be previewed using [MHS](https://www.dixmor-hospital.com/mhs/index.php)
+- 😈 Max material limit can be disabled with [pluginMH](https://github.com/ermaccer/Manhunt.PluginMH/releases)
 - 📹 [Tutorial](https://www.youtube.com/watch?v=eBYBZ3RC2uA)
 
 #### scene2.bsp
@@ -172,4 +194,4 @@ Just a list of stuff that can be modded in MH1 with the respective tools/scripts
 > The worst file of them all. 
 > Unmodded game will gladly crash if any file goes over what's written in this size list of crap. 
 - ✏️ Can be edited with any text editor and tears
-- 😈 Can be disabled and sent back to hell with [MH Fixer](https://github.com/ermaccer/Manhunt.Fixer/releases)
+- 😈 Can be disabled and sent back to hell with [pluginMH](https://github.com/ermaccer/Manhunt.PluginMH/releases)
